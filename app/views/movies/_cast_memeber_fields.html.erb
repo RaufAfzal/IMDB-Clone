@@ -1,0 +1,12 @@
+
+
+<div class="nested-fields">
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.label :role %>
+  <%=f.select :role,CastMemeber.roles.keys.to_a %>
+
+  <%= f.check_box :_destroy %>
+
+  <%= link_to_remove_association "remove address", f %>
+</div>

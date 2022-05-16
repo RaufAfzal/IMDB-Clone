@@ -1,0 +1,9 @@
+<% @movies.each do |m| %>
+
+  <%= image_tag m.image.url(:large) %><br>
+  <%= m.title %> <br/>
+  <%= m.description %><br/>
+  <%= m.rating %><br/>
+  <%= m.director %><br/>
+  <%= m.movie_length %>
+<% end %>

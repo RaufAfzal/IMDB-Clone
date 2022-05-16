@@ -1,0 +1,1126 @@
+
+---
+active_storage_attachments:
+  columns:
+  - id
+  - name
+  - record_type
+  - record_id
+  - blob_id
+  - created_at
+  records: 
+  - - 1
+    - pictures
+    - Picture
+    - 1
+    - 1
+    - '2022-05-10 07:59:00.806157'
+  - - 2
+    - pictures
+    - Picture
+    - 1
+    - 2
+    - '2022-05-10 07:59:00.807306'
+  - - 3
+    - pictures
+    - Picture
+    - 1
+    - 3
+    - '2022-05-10 08:57:32.507286'
+  - - 4
+    - pictures
+    - Picture
+    - 1
+    - 4
+    - '2022-05-10 08:57:32.512214'
+  - - 5
+    - pictures
+    - Picture
+    - 2
+    - 5
+    - '2022-05-10 09:03:15.823939'
+  - - 6
+    - pictures
+    - Picture
+    - 2
+    - 6
+    - '2022-05-10 09:03:15.825412'
+
+---
+active_storage_blobs:
+  columns:
+  - id
+  - key
+  - filename
+  - content_type
+  - metadata
+  - byte_size
+  - checksum
+  - created_at
+  records: 
+  - - 1
+    - Q8Nq7a4CgT46JizrkPEhEA9W
+    - game.jpeg
+    - image/jpeg
+    - '{"identified":true,"width":189,"height":267,"analyzed":true}'
+    - 10417
+    - "+Abvj5/VI0JFkug1fbfXJQ=="
+    - '2022-05-10 07:59:00.763385'
+  - - 2
+    - AUBuQhQn9w168pTqV9ridLyG
+    - KGF.jpg
+    - image/jpeg
+    - '{"identified":true,"width":1280,"height":851,"analyzed":true}'
+    - 164359
+    - j+AFmIebPPro24F7MyzPgg==
+    - '2022-05-10 07:59:00.790226'
+  - - 3
+    - a1CBStrv9xjLDeUbNpikgBCu
+    - Avengers.jpeg
+    - image/jpeg
+    - '{"identified":true,"width":184,"height":273,"analyzed":true}'
+    - 13860
+    - 3KYp8yhxVgTopN5UYUMkSA==
+    - '2022-05-10 08:57:32.501773'
+  - - 4
+    - 7ckEPTr7QjCQGZyQSg3VBpfr
+    - BrakingBad.jpg
+    - image/jpeg
+    - '{"identified":true,"width":1280,"height":720,"analyzed":true}'
+    - 124997
+    - WvDdS4D1Q0L4YYBILRazTQ==
+    - '2022-05-10 08:57:32.510677'
+  - - 5
+    - Z5QyurG2nLiVnobUvS3fioG7
+    - Phantom.jpeg
+    - image/jpeg
+    - '{"identified":true}'
+    - 11060
+    - z6n5Y35HKtZ8NaMCBZCHgg==
+    - '2022-05-10 09:03:15.791865'
+  - - 6
+    - 4BFXHhfrNvkuLURQYuSie19p
+    - Phantom1.jpeg
+    - image/jpeg
+    - '{"identified":true,"width":268,"height":188,"analyzed":true}'
+    - 10947
+    - aNfxxMsTr9hFjJI/zDN14g==
+    - '2022-05-10 09:03:15.805889'
+
+---
+add_to_watchlists:
+  columns:
+  - id
+  - movie_id
+  - user_id
+  - created_at
+  - updated_at
+  records: 
+  - - 14
+    - 16
+    - 2
+    - '2022-04-29 07:53:23.560196'
+    - '2022-04-29 07:53:23.560196'
+  - - 15
+    - 8
+    - 2
+    - '2022-04-29 11:37:45.741089'
+    - '2022-04-29 11:37:45.741089'
+  - - 16
+    - 1
+    - 2
+    - '2022-04-30 16:15:50.584245'
+    - '2022-04-30 16:15:50.584245'
+  - - 19
+    - 10
+    - 2
+    - '2022-04-30 16:26:24.788572'
+    - '2022-04-30 16:26:24.788572'
+  - - 21
+    - 4
+    - 2
+    - '2022-05-09 13:21:55.412240'
+    - '2022-05-09 13:21:55.412240'
+
+---
+ar_internal_metadata:
+  columns:
+  - key
+  - value
+  - created_at
+  - updated_at
+  records: 
+  - - environment
+    - development
+    - '2022-04-18 05:42:23.400021'
+    - '2022-04-18 05:42:23.400021'
+
+---
+cast_memebers:
+  columns:
+  - id
+  - name
+  - movie_id
+  - created_at
+  - updated_at
+  - role
+  records: 
+  - - 1
+    - Katherine
+    - 13
+    - '2022-04-27 06:24:16.816399'
+    - '2022-04-29 11:31:24.944388'
+    - 0
+  - - 2
+    - Stephen Surjik
+    - 13
+    - '2022-04-27 07:11:18.215792'
+    - '2022-04-27 07:11:18.215792'
+    - 2
+  - - 3
+    - hero
+    - 14
+    - '2022-04-27 07:45:30.142104'
+    - '2022-04-27 07:45:30.142104'
+    - 2
+  - - 4
+    - Jack willson
+    - 15
+    - '2022-04-28 06:20:15.487436'
+    - '2022-04-28 06:20:15.487436'
+    - 2
+  - - 5
+    - Leonardo DiCaprio
+    - 16
+    - '2022-04-28 08:35:01.534031'
+    - '2022-04-28 08:35:01.534031'
+    - 2
+  - - 7
+    - Tony Stark
+    - 1
+    - '2022-04-28 09:28:53.015189'
+    - '2022-04-28 09:48:43.957015'
+    - 2
+  - - 9
+    - Alyse Halley
+    - 1
+    - '2022-04-28 09:52:02.876989'
+    - '2022-04-28 09:52:02.876989'
+    - 2
+  - - 10
+    - 'Captain America '
+    - 2
+    - '2022-04-28 10:25:10.035832'
+    - '2022-04-28 10:31:07.078763'
+    - 0
+  - - 11
+    - Yash
+    - 6
+    - '2022-04-28 10:41:34.240935'
+    - '2022-04-28 10:41:34.240935'
+    - 0
+  - - 12
+    - Sanjaydutt
+    - 6
+    - '2022-04-28 11:06:05.344049'
+    - '2022-04-28 11:06:05.344049'
+    - 2
+  - - 13
+    - Rose
+    - 16
+    - '2022-04-29 07:53:43.234944'
+    - '2022-04-29 07:53:43.234944'
+    - 0
+  - - 14
+    - Robert
+    - 5
+    - '2022-04-29 09:48:56.435479'
+    - '2022-04-29 09:48:56.435479'
+    - 0
+  - - 15
+    - Tyron
+    - 5
+    - '2022-04-29 09:48:56.437671'
+    - '2022-04-29 09:48:56.437671'
+    - 2
+  - - 16
+    - Rauf
+    - 2
+    - '2022-04-29 11:34:55.396202'
+    - '2022-04-29 11:34:55.396202'
+    - 2
+  - - 17
+    - hayat
+    - 2
+    - '2022-04-29 11:35:39.669115'
+    - '2022-04-29 11:35:39.669115'
+    - 0
+  - - 19
+    - hhj
+    - 12
+    - '2022-04-30 16:17:45.186539'
+    - '2022-04-30 16:17:45.186539'
+    - 0
+  - - 20
+    - h
+    - 12
+    - '2022-04-30 16:17:45.187912'
+    - '2022-04-30 16:17:45.187912'
+    - 0
+  - - 21
+    - Shahid Kapoor
+    - 17
+    - '2022-05-09 09:18:03.227100'
+    - '2022-05-09 09:18:03.227100'
+    - 0
+  - - 22
+    - Kiara Advani
+    - 17
+    - '2022-05-09 09:18:03.228915'
+    - '2022-05-09 09:18:03.228915'
+    - 2
+  - - 23
+    - e
+    - 20
+    - '2022-05-09 10:12:34.755800'
+    - '2022-05-09 10:12:34.755800'
+    - 0
+  - - 24
+    - m
+    - 21
+    - '2022-05-09 10:28:45.684932'
+    - '2022-05-09 10:28:45.684932'
+    - 0
+  - - 25
+    - Amir Khan
+    - 23
+    - '2022-05-09 11:25:24.496000'
+    - '2022-05-09 11:25:24.496000'
+    - 0
+  - - 26
+    - Amir Khan
+    - 24
+    - '2022-05-09 12:17:13.684471'
+    - '2022-05-09 12:17:13.684471'
+    - 0
+  - - 27
+    - Ragnar
+    - 4
+    - '2022-05-09 13:19:38.521158'
+    - '2022-05-09 13:19:38.521158'
+    - 0
+  - - 28
+    - Yoo Yoo
+    - 25
+    - '2022-05-09 13:23:46.004365'
+    - '2022-05-09 13:23:46.004365'
+    - 0
+  - - 29
+    - Amir
+    - 26
+    - '2022-05-09 13:44:28.480574'
+    - '2022-05-09 13:44:28.480574'
+    - 2
+  - - 30
+    - Zaka
+    - 26
+    - '2022-05-09 13:44:28.481785'
+    - '2022-05-09 13:44:28.481785'
+    - 0
+  - - 31
+    - cheema
+    - 27
+    - '2022-05-09 13:50:55.926346'
+    - '2022-05-09 13:50:55.926346'
+    - 0
+  - - 32
+    - zoo
+    - 28
+    - '2022-05-09 14:20:14.991299'
+    - '2022-05-09 14:20:14.991299'
+    - 0
+  - - 33
+    - Zaka Ahmed
+    - 30
+    - '2022-05-10 07:11:12.551305'
+    - '2022-05-10 07:11:12.551305'
+    - 2
+  - - 34
+    - Messi
+    - 32
+    - '2022-05-10 09:03:15.821251'
+    - '2022-05-10 09:03:15.821251'
+    - 0
+
+---
+movies:
+  columns:
+  - id
+  - title
+  - description
+  - movie_length
+  - director
+  - rating
+  - created_at
+  - updated_at
+  - user_id
+  - image_file_name
+  - image_content_type
+  - image_file_size
+  - image_updated_at
+  - role
+  records: 
+  - - 1
+    - Iron Man
+    - Synopsis. 2008's Iron Man tells the story of Tony Stark, a billionaire industrialist
+      and genius inventor who is kidnapped and forced to build a devastating weapon.
+      Instead, using his intelligence and ingenuity, Tony builds a high-tech suit
+      of armor and escapes captivity.
+    - '2:30'
+    - Jon Favreau
+    - '4.0'
+    - '2022-04-18 05:44:18.334921'
+    - '2022-04-28 09:14:25.529100'
+    - 1
+    - Iron.jpg
+    - image/jpeg
+    - 43870
+    - '2022-04-18 10:11:19.578268'
+    - 1
+  - - 2
+    - Avengers
+    - Earth's Mightiest Heroes stand as the planet's first line of defense against
+      the most powerful threats in the universe. The Avengers began as a group of
+      extraordinary individuals who were assembled to defeat Loki and his Chitauri
+      army in New York City.
+    - '2:00'
+    - Joe Russo
+    - '4:8'
+    - '2022-04-18 05:45:27.913462'
+    - '2022-04-25 11:21:55.126445'
+    - 1
+    - Avengers.jpeg
+    - image/jpeg
+    - 13860
+    - '2022-04-18 10:12:54.313924'
+    - 0
+  - - 3
+    - 'Games '
+    - In the Game of Thrones, you either win or you die. In the mythical continent
+      of Westeros, nine families of higher nobility (Targaryen, Lannisters, Starks,
+      Tyrell, Martell, Greyjoys, Baratheons and Boltons) scramble bitterly to gain
+      power over the seven kingdoms and the Iron throne.
+    - 8 seasons
+    - Alan Taylor
+    - '9.5'
+    - '2022-04-18 06:24:56.698710'
+    - '2022-04-20 07:10:09.254066'
+    - 1
+    - game.jpeg
+    - image/jpeg
+    - 10417
+    - '2022-04-18 10:06:55.128876'
+    - 
+  - - 4
+    - Vikings
+    - The Vikings were raiders, pirates, traders, explorers, and colonizers during
+      the 9th to 11th century. They often traveled by sea from Scandinavia and took
+      control of areas of Europe and beyond.
+    - '3:30'
+    - Jeff Woolnough
+    - '4:9'
+    - '2022-04-18 07:24:30.663011'
+    - '2022-04-20 07:14:55.711211'
+    - 1
+    - vikings.jpeg
+    - image/jpeg
+    - 8738
+    - '2022-04-18 10:12:05.369062'
+    - 
+  - - 5
+    - Maze Runner
+    - A teen wakes up in a clearing in the center of a gigantic maze with no memory
+      of his past, finding himself a resident in community of boys who have built
+      a village in the glade and who sends two of its strongest and fittest runners
+      into the maze every morning to find a way out.
+    - '2:45'
+    - Wes Ball
+    - '1:45'
+    - '2022-04-18 09:16:31.235767'
+    - '2022-04-26 07:06:12.406058'
+    - 1
+    - index.jpeg
+    - image/jpeg
+    - 11915
+    - '2022-04-18 10:06:26.992530'
+    - 2
+  - - 6
+    - KGF
+    - 'K.G.F: Chapter 1 is a 2018 Indian Kannada-language period action film written
+      and directed by Prashanth Neel, and produced by Vijay Kiragandur under the banner
+      of Hombale Films. It is the first of two installments in the franchise, followed
+      by K.G.F: Chapter 2.'
+    - '3:00'
+    - Prashanth Neel
+    - '5'
+    - '2022-04-19 08:56:40.151828'
+    - '2022-04-20 07:19:34.328100'
+    - 2
+    - KGF.jpg
+    - image/jpeg
+    - 164359
+    - '2022-04-20 06:48:49.838224'
+    - 
+  - - 7
+    - KGF chapter 2
+    - 'Helmed by Prashanth Neel, KGF: Chapter 2 is a follow-up of the Kannada blockbuster
+      KGF Chapter 1. Starring Yash in the lead, the first part''s narrative follows
+      an underdog who later becomes a dangerous gangster. The sequel sees Yash''s
+      character Rocky trying to consolidate his newly-acquired gold-mining empire.'
+    - '3:45'
+    - Prashanth Neel
+    - '5'
+    - '2022-04-20 07:05:08.402067'
+    - '2022-04-20 07:18:49.611833'
+    - 2
+    - kgf_chapter2.jpg
+    - image/jpeg
+    - 96311
+    - '2022-04-20 07:05:08.105466'
+    - 
+  - - 8
+    - Venom 3
+    - venom, the poisonous secretion of an animal, produced by specialized glands
+      that are often associated with spines, teeth, stings, or other piercing devices.
+      The venom apparatus may be primarily for killing or paralyzing prey or may be
+      a purely defensive adaptation. Some venoms also function as digestive fluids.
+    - '2:45'
+    - Ruben Fleischer
+    - '3.5'
+    - '2022-04-22 10:14:35.186308'
+    - '2022-04-22 10:14:35.186308'
+    - 2
+    - Venom.jpeg
+    - image/jpeg
+    - 14092
+    - '2022-04-22 10:14:34.973391'
+    - 
+  - - 9
+    - Venom 7
+    - A failed reporter is bonded to an alien entity, one of many symbiotes who have
+      invaded Earth. But the being takes a liking to Earth and decides to protect
+      it. After a faulty interview with the Life Foundation ruins his career, former
+      reporter Eddie Brock's life is in pieces.
+    - '2:45'
+    - Andy Serkis
+    - '5'
+    - '2022-04-25 12:11:34.083394'
+    - '2022-04-26 06:55:15.972457'
+    - 2
+    - Venom.jpeg
+    - image/jpeg
+    - 14092
+    - '2022-04-25 12:11:33.859146'
+    - 1
+  - - 10
+    - Breaking Bad
+    - Created by Vince Gilligan, the series follows the exploits of Walter White,
+      a modest high school chemistry teacher, who discovers a new purpose in life
+      when he learns he has terminal cancer and turns to a life of crime to provide
+      for his family.
+    - '2:30'
+    - Image result for Breaking bad director George Vincent Gilligan Jr.
+    - '5'
+    - '2022-04-25 12:13:29.338110'
+    - '2022-04-26 06:57:29.585700'
+    - 2
+    - BrakingBad.jpg
+    - image/jpeg
+    - 124997
+    - '2022-04-26 06:57:29.235870'
+    - 1
+  - - 11
+    - Freedom
+    - fd
+    - '2:32'
+    - yung
+    - '5'
+    - '2022-04-26 06:20:01.820231'
+    - '2022-04-26 06:45:21.314928'
+    - 2
+    - Freedom.jpg
+    - image/jpeg
+    - 167849
+    - '2022-04-26 06:20:01.538743'
+    - 1
+  - - 12
+    - Bladde Runner
+    - What is a Blade Runner? Blade Runners are bounty hunters tasked with systematically
+      hunting down and “retiring” (killing) remaining replicants. As a tool for identifying
+      replicants, Blade Runners have a mental test consisting a series of emotion-evoking
+      questions to help distinguish a replicant from a human.
+    - '2:20'
+    - Ridley Scott
+    - '4'
+    - '2022-04-27 06:18:13.674316'
+    - '2022-04-27 06:19:11.926181'
+    - 2
+    - b.png
+    - image/png
+    - 131302
+    - '2022-04-27 06:19:11.702212'
+    - 0
+  - - 13
+    - Witcher
+    - Witchers are once-normal humans who got mutated by a combination of medieval
+      science and magic, which made them superhuman (more Captain America than Superman)
+      and able to take potions too toxic for normal people.
+    - 7 episodes
+    - Lauren Schmidt Hissrich
+    - '7'
+    - '2022-04-27 06:24:16.814038'
+    - '2022-04-27 07:11:18.213408'
+    - 2
+    - Witcher.jpeg
+    - image/jpeg
+    - 11072
+    - '2022-04-27 07:11:18.045392'
+    - 1
+  - - 14
+    - Money Heist
+    - Eight thieves take hostages and lock themselves in the Royal Mint of Spain as
+      a criminal mastermind manipulates the police to carry out his plan. Watch all
+      you want. This riveting crime series won Best Drama at the International Emmy
+      Awards, Premios Fénix and Premios Iris (plus six more Iris wins).
+    - '2:30'
+    - Álex Pina
+    - '8'
+    - '2022-04-27 07:45:30.139745'
+    - '2022-04-27 07:45:30.139745'
+    - 2
+    - Moneyheist.jpg
+    - image/jpeg
+    - 241814
+    - '2022-04-27 07:45:29.590527'
+    - 1
+  - - 15
+    - MoonLight
+    - Based on the unpublished play In Moonlight Black Boys Look Blue by Tarell Alvin
+      McCraney, it tells the story of a young Black man coming to grips with his attraction
+      to other men. It was the first film with an entirely African American cast and
+      the first with a gay main character to win the top Oscar.
+    - '2:30'
+    - " Barry Jenkins"
+    - '5'
+    - '2022-04-28 06:20:15.485672'
+    - '2022-05-10 06:33:09.274978'
+    - 2
+    - MoonLight.png
+    - image/png
+    - 611431
+    - '2022-05-10 06:33:08.786106'
+    - 2
+  - - 16
+    - 'Titanic '
+    - The movie tells the dramatic story of the Titanic with Leonardo Di Caprio and
+      Kate Winslet as the main actors. In the year 1912 a young poor guy, Leonardo,
+      travels by the gorgeous ship Titanic from London to New York with a big dream.
+      On board he meets a fabulous, wealthy girl, Kate Winslet.
+    - '3:00'
+    - James Cameron
+    - '4'
+    - '2022-04-28 08:35:01.530143'
+    - '2022-04-28 08:35:01.530143'
+    - 2
+    - Titanic.jpg
+    - image/jpeg
+    - 47760
+    - '2022-04-28 08:35:01.254419'
+    - 0
+  - - 17
+    - Kabir Singh
+    - rr
+    - '23'
+    - hd
+    - '5'
+    - '2022-05-09 09:18:03.224457'
+    - '2022-05-09 09:50:59.464943'
+    - 2
+    - Kabir.jpg
+    - image/jpeg
+    - 39037
+    - '2022-05-09 09:50:59.210899'
+    - 
+  - - 18
+    - eg
+    - fds
+    - '1'
+    - fdsaf
+    - '3.5'
+    - '2022-05-09 09:54:24.529846'
+    - '2022-05-09 09:54:24.529846'
+    - 2
+    - 
+    - 
+    - 
+    - 
+    - 
+  - - 19
+    - sdf
+    - fds
+    - '3'
+    - dfds
+    - '3.5'
+    - '2022-05-09 10:04:52.658379'
+    - '2022-05-09 10:04:52.658379'
+    - 2
+    - 
+    - 
+    - 
+    - 
+    - 
+  - - 20
+    - frr
+    - dede
+    - '3:00'
+    - Barry Jenkins
+    - '5'
+    - '2022-05-09 10:12:34.753602'
+    - '2022-05-09 10:12:34.753602'
+    - 2
+    - 
+    - 
+    - 
+    - 
+    - 
+  - - 21
+    - Kabir Singh 2
+    - jj
+    - '4'
+    - Karan johar
+    - '5'
+    - '2022-05-09 10:28:45.680916'
+    - '2022-05-09 10:28:45.680916'
+    - 2
+    - 
+    - 
+    - 
+    - 
+    - 
+  - - 22
+    - bnhjnbj nbnjnjbnnb
+    - bjnbjnjn bj
+    - ''
+    - ''
+    - ''
+    - '2022-05-09 10:47:53.132362'
+    - '2022-05-09 10:47:53.132362'
+    - 2
+    - 
+    - 
+    - 
+    - 
+    - 
+  - - 23
+    - Rang De Basanti
+    - It follows a British film student traveling to India to document the story of
+      five freedom fighters of the Indian revolutionary movement. She befriends and
+      casts five young men in the film, which inspires them to fight against the corruption
+      of their own government. The film was shot primarily in New Delhi.
+    - '3:20'
+    - Amir Khan
+    - '5'
+    - '2022-05-09 11:25:24.493546'
+    - '2022-05-09 11:25:24.493546'
+    - 2
+    - 
+    - 
+    - 
+    - 
+    - 
+  - - 24
+    - Rang De Basanti 1
+    - hhi
+    - '5'
+    - Amir Khan
+    - '5'
+    - '2022-05-09 12:17:13.681017'
+    - '2022-05-09 12:17:13.681017'
+    - 2
+    - 
+    - 
+    - 
+    - 
+    - 
+  - - 25
+    - Singh is King
+    - e
+    - '4'
+    - mone
+    - '5'
+    - '2022-05-09 13:23:46.000959'
+    - '2022-05-09 13:40:01.117972'
+    - 2
+    - Kabir-Singh-1.jpg
+    - image/jpeg
+    - 87495
+    - '2022-05-09 13:40:00.867397'
+    - 
+  - - 26
+    - Amir is King
+    - Amir okara wala
+    - '3:00'
+    - Zaka
+    - '5'
+    - '2022-05-09 13:44:28.476254'
+    - '2022-05-09 13:46:05.863457'
+    - 2
+    - rang.jpg
+    - image/jpeg
+    - 407161
+    - '2022-05-09 13:46:05.334647'
+    - 
+  - - 27
+    - Chemma shb
+    - cheema shb is a great man
+    - '2:45'
+    - Umer cheema
+    - '5'
+    - '2022-05-09 13:50:55.923049'
+    - '2022-05-09 14:16:55.082606'
+    - 2
+    - rang.jpg
+    - image/jpeg
+    - 407161
+    - '2022-05-09 14:16:54.531901'
+    - 
+  - - 28
+    - IPhone
+    - Apple's Phone
+    - '3:00'
+    - JAck maa
+    - '4'
+    - '2022-05-09 14:20:14.989213'
+    - '2022-05-10 09:01:26.958959'
+    - 2
+    - Iron.jpg
+    - image/jpeg
+    - 43870
+    - '2022-05-10 09:01:26.754922'
+    - 
+  - - 29
+    - Rango
+    - ''
+    - ''
+    - ''
+    - ''
+    - '2022-05-10 07:07:14.129985'
+    - '2022-05-10 07:08:51.311897'
+    - 2
+    - Titanic.jpg
+    - image/jpeg
+    - 47760
+    - '2022-05-10 07:08:51.032687'
+    - 
+  - - 30
+    - ery
+    - ''
+    - ''
+    - ''
+    - ''
+    - '2022-05-10 07:09:36.633991'
+    - '2022-05-10 07:09:36.633991'
+    - 2
+    - 
+    - 
+    - 
+    - 
+    - 
+  - - 31
+    - Zaka Ahmed
+    - ''
+    - ''
+    - ''
+    - ''
+    - '2022-05-10 07:59:00.803313'
+    - '2022-05-10 07:59:00.803313'
+    - 2
+    - 
+    - 
+    - 
+    - 
+    - 
+  - - 32
+    - Phantom
+    - ''
+    - ''
+    - ''
+    - ''
+    - '2022-05-10 09:03:15.819210'
+    - '2022-05-10 09:03:15.819210'
+    - 2
+    - 
+    - 
+    - 
+    - 
+    - 
+
+---
+pictures:
+  columns:
+  - id
+  - name
+  - imageable_type
+  - imageable_id
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - 
+    - Movie
+    - 31
+    - '2022-05-10 07:59:00.805032'
+    - '2022-05-10 08:57:32.513102'
+  - - 2
+    - 
+    - Movie
+    - 32
+    - '2022-05-10 09:03:15.822459'
+    - '2022-05-10 09:03:15.826696'
+
+---
+reviews:
+  columns:
+  - id
+  - rating
+  - comment
+  - created_at
+  - updated_at
+  - user_id
+  - movie_id
+  records: 
+  - - 3
+    - 5
+    - 'This is the best movie in town till yet '
+    - '2022-04-19 06:50:41.242105'
+    - '2022-04-19 06:50:41.242105'
+    - 2
+    - 
+  - - 4
+    - 3
+    - This is the most sucked movie till now
+    - '2022-04-19 06:54:07.103624'
+    - '2022-04-19 06:54:13.919900'
+    - 2
+    - 
+  - - 5
+    - 5
+    - Biggest Movie
+    - '2022-04-19 07:49:33.452931'
+    - '2022-04-19 07:49:33.452931'
+    - 2
+    - 
+  - - 6
+    - 5
+    - Biggest Movie
+    - '2022-04-19 07:50:23.920396'
+    - '2022-04-19 07:50:23.920396'
+    - 2
+    - 
+  - - 7
+    - 4
+    - Awfull movie
+    - '2022-04-19 07:53:49.455692'
+    - '2022-04-19 07:53:49.455692'
+    - 2
+    - 
+  - - 8
+    - 5
+    - Awesome movie
+    - '2022-04-19 09:02:33.812508'
+    - '2022-04-19 09:02:33.812508'
+    - 2
+    - 2
+  - - 9
+    - 3
+    - Very nice movie
+    - '2022-04-19 09:26:20.935847'
+    - '2022-04-19 09:26:20.935847'
+    - 2
+    - 2
+  - - 10
+    - 6
+    - Very ache movie
+    - '2022-04-19 09:26:52.181631'
+    - '2022-04-19 09:26:52.181631'
+    - 2
+    - 2
+  - - 11
+    - 5
+    - Besttest movie
+    - '2022-04-19 09:51:47.404860'
+    - '2022-04-19 09:51:47.404860'
+    - 2
+    - 5
+  - - 12
+    - 5
+    - Ache movie
+    - '2022-04-19 10:00:42.539556'
+    - '2022-04-19 10:00:42.539556'
+    - 2
+    - 5
+  - - 13
+    - 5
+    - Ache movie
+    - '2022-04-19 10:09:20.905838'
+    - '2022-04-19 10:09:20.905838'
+    - 2
+    - 5
+  - - 14
+    - 5
+    - ye to very nice movie
+    - '2022-04-19 10:14:52.179343'
+    - '2022-04-19 10:14:52.179343'
+    - 2
+    - 3
+  - - 15
+    - 3
+    - worlign
+    - '2022-04-19 10:19:13.631813'
+    - '2022-04-19 10:19:13.631813'
+    - 2
+    - 1
+  - - 16
+    - 4
+    - displaying the comment
+    - '2022-04-19 10:19:41.726949'
+    - '2022-04-19 10:19:41.726949'
+    - 2
+    - 1
+  - - 17
+    - 5
+    - Vikings is one of the best movie
+    - '2022-04-19 10:30:24.052517'
+    - '2022-04-19 10:30:24.052517'
+    - 2
+    - 4
+  - - 18
+    - 5
+    - Everyone should go and watch this movie
+    - '2022-04-20 07:44:43.129143'
+    - '2022-04-20 07:44:43.129143'
+    - 2
+    - 7
+  - - 19
+    - 9
+    - One of the best season you will ever see
+    - '2022-04-20 07:57:02.801837'
+    - '2022-04-20 07:57:02.801837'
+    - 2
+    - 3
+  - - 20
+    - 5
+    - Fantastic Movie one should watch this movie
+    - '2022-04-20 07:58:42.255999'
+    - '2022-04-20 07:58:42.255999'
+    - 2
+    - 1
+  - - 21
+    - 2
+    - Bad experience not  worth watching
+    - '2022-04-20 07:59:07.266769'
+    - '2022-04-20 07:59:07.266769'
+    - 2
+    - 1
+  - - 22
+    - 5
+    - this is review
+    - '2022-04-22 09:26:09.383451'
+    - '2022-04-22 09:26:09.383451'
+    - 2
+    - 1
+  - - 23
+    - 5
+    - Biggest hit of south
+    - '2022-04-22 10:15:39.899476'
+    - '2022-04-22 10:15:39.899476'
+    - 2
+    - 6
+  - - 24
+    - 2
+    - Unrealistic movie
+    - '2022-04-22 10:16:20.367124'
+    - '2022-04-22 10:16:20.367124'
+    - 2
+    - 6
+  - - 25
+    - 4
+    - In my point of view this is the biggest hit of 2022
+    - '2022-04-22 10:17:12.409983'
+    - '2022-04-22 10:17:12.409983'
+    - 2
+    - 6
+  - - 26
+    - 3
+    - Not upto the expectations
+    - '2022-04-26 06:58:26.975774'
+    - '2022-04-26 06:58:26.975774'
+    - 2
+    - 10
+  - - 27
+    - 5
+    - Award Winning Movie
+    - '2022-04-28 08:37:20.389182'
+    - '2022-04-28 08:37:20.389182'
+    - 2
+    - 16
+  - - 28
+    - 5
+    - 'Bombastic Season '
+    - '2022-04-28 11:41:15.639996'
+    - '2022-04-28 11:41:15.639996'
+    - 2
+    - 10
+  - - 29
+    - 5
+    - One of the hit season in Hollywood industry
+    - '2022-04-29 11:30:39.043164'
+    - '2022-04-29 11:30:39.043164'
+    - 2
+    - 13
+  - - 30
+    - 5
+    - yghnnh
+    - '2022-04-30 16:16:04.121516'
+    - '2022-04-30 16:16:04.121516'
+    - 2
+    - 1
+
+---
+users:
+  columns:
+  - id
+  - email
+  - encrypted_password
+  - reset_password_token
+  - reset_password_sent_at
+  - remember_created_at
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - rauf@gmail.com
+    - "$2a$12$i4c6K1Lq4ApcdGmoVEpLquM7taRQIwR/VhRN9Y95.awNl.TKI57La"
+    - 
+    - 
+    - 
+    - '2022-04-18 07:10:34.963555'
+    - '2022-04-18 07:10:34.963555'
+  - - 2
+    - hayat@gmail.com
+    - "$2a$12$MVsxg8YEVoZlxgXy9nvMZOMrlkR4V0AsKbsSJgMz75maO5BZj5opq"
+    - 
+    - 
+    - 
+    - '2022-04-19 06:33:11.906446'
+    - '2022-04-19 06:33:11.906446'

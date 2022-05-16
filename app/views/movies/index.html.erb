@@ -1,0 +1,19 @@
+<% if !user_signed_in? %>
+  <div class="jumbotron">
+    <h1>Your Favorite Movies Reviewed</h1>
+    <p>Here you can write your views about your favourite movie.We have creared this app for you to facilitate you and that you
+    can share your thoughts with people</p>
+    <p><%= link_to "Sign Up To Write A Review", new_user_registration_path, class: "btn btn-primary btn-lg" %></p>
+  </div>
+<% end %>
+<div id="movie">
+  <%= render "movies/movie" %>
+</div>
+
+
+
+
+
+
+
+

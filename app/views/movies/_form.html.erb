@@ -1,0 +1,85 @@
+<%= form_with model: movie, local: true,html: { multipart: true }  do |f| %>
+  <% if movie.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(movie.errors.count, "error") %> prohibited this movie from being saved:</h2>
+
+      <ul>
+      <% movie.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </div>
+
+  <div class="field">
+    <%= f.label :description %>
+    <%= f.text_area :description %>
+  </div>
+
+  <div class="field">
+    <%= f.label :movie_length %>
+    <%= f.text_field :movie_length %>
+  </div>
+
+  <div class="field">
+    <%= f.label :director %>
+    <%= f.text_field :director %>
+  </div>
+
+  <div class="field">
+    <%= f.label :rating %>
+    <%= f.text_field :rating %>
+  </div>
+  <br>
+
+  <div>
+    <% if current_user.role == "Admin" %>
+    <%= f.label :status %>
+    <%= f.select :status, Movie.statuses.keys.to_a %>
+      <%end %>
+
+
+
+
+  <div>
+   <p><strong>Cast Member:<%= @movie.cast_memebers.count %></strong></p>
+
+
+
+    <div class="field">
+    <%= f.fields_for :cast_memebers do |cast_memeber| %>
+      <%= render 'cast_memeber_fields', f:cast_memeber %>
+    <%end%>
+
+  </div>
+    <div class="links">
+      <%= link_to_add_association 'Add castmemebers ', f, :cast_memebers %>
+    </div>
+
+  </div><br>
+  
+    <div class="field">
+    <%= f.label :image %>
+    <%= f.file_field :image%>
+  </div><br>
+
+    <div>
+      <%= f.fields_for :pictures do |picture| %>
+        <%= picture.label :pictures, style: "display: block" %>
+        <%= picture.file_field :pictures, multiple: true %>
+      <% end %>
+    </div>
+    <br>
+
+
+    <div class="actions">
+    <%= f.submit %>
+  </div>
+  </div>
+<% end %>
+

@@ -1,0 +1,22 @@
+<div class="row">
+<% if user_signed_in?%>
+  <% @movies.each do |movie| %>
+   
+    <div class="col-sm-6 col-md-3">
+      <div class="thumbnail">
+        <%= link_to (image_tag movie.image.url(:large), class: 'image'), movie %>
+      </div>
+    </div>
+  <% end %>
+  <%else%>
+  <% Movie.all.where(status:1).each do |movie|%>
+ <div class="col-sm-6 col-md-3">
+      <div class="thumbnail">
+        <%= link_to (image_tag movie.image.url(:large), class: 'image'), movie %>
+      </div>
+    </div>
+  <%end%>
+  <%end%>
+  
+
+</div>
