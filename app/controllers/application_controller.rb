@@ -1,6 +1,7 @@
 class ApplicationController < ActionController::Base
   def add_to_watchlist
     return @add_to_watchlist_exist ? "Remove from the watchlist" : "watchlist"
+    
   end
 
   include Pundit::Authorization
