@@ -2,13 +2,12 @@ class MoviePolicy < ApplicationPolicy
   class Scope < Scope
     # NOTE: Be explicit about which records you allow access to!
     def resolve
-    
       if user.present?
     
         if user.Admin?
-          scope.where(status:0)
+          scope.status_with_reviews(0)
         else
-          scope.where(status: 1)
+          scope.status_with_reviews(1)
         end
     end
    end
@@ -18,18 +17,25 @@ class MoviePolicy < ApplicationPolicy
     end
    
   def index?
+  
     if user.present?
       user.Member?
     end
   end
 
   def update?
+  
     if user.present?
       user.Moderator? || user.Admin?
     end
-
-
   end
+  
+  def create?
+    if user.present?
+      user.Moderator?
+    end
+  end
+
   # def show?
   #   if user.present?
   #   user.Member?

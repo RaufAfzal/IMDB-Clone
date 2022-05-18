@@ -8,16 +8,14 @@ before_action :authenticate_user!, except: [:index,:show]
   def index
     if current_user.present?
     @movies = policy_scope(Movie)
-  # respond_to do |format|
-  #   format.js
-  # end
-  # authorize @movies
     end
-  end
+
+   end
 
   def search
 
-    @movies = Movie.search(params[:q])
+    # @movies = Movie.search(params[:q])
+    @movies=Movie.movie_title(params[:q])
   end
 
 
@@ -27,7 +25,7 @@ before_action :authenticate_user!, except: [:index,:show]
   def show
   # byebug
   # authorize @movie
-    @reviews = Review.where(movie_id: @movie.id).order("created_at DESC ")
+    @reviews = @movie.reviews.long_reviews.order("created_at DESC ")
     @add_to_watchlist_exist = AddToWatchlist.where(movie: @movie, user: current_user) ==[] ?false :true
   end
 
@@ -38,6 +36,9 @@ before_action :authenticate_user!, except: [:index,:show]
     @movie = Movie.new
     1.times { @movie.cast_memebers.build}
     @movie.pictures.build
+  
+
+
 
   end
 
@@ -59,6 +60,7 @@ before_action :authenticate_user!, except: [:index,:show]
       else
         format.html { render :new, status: :unprocessable_entity }
         format.json { render json: @movie.errors, status: :unprocessable_entity }
+      
       end
     end
   end

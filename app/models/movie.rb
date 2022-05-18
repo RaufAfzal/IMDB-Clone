@@ -17,19 +17,19 @@ class Movie < ApplicationRecord
 
 
 
+  # def self.search(title)
+  #   if title
+  #     Movie.where('title LIKE ?', "%#{title}%")
+  #   else
+  #     all
+  #   end
+  # end
 
+  scope :movie_title, ->(title) {where('title LIKE ?', "%#{title}%")}
 
+  scope :long_reviews,-> { where('rating > 7')}
 
-
-  def self.search(title)
-    if title
-      Movie.where('title LIKE ?', "%#{title}%")
-    else
-      all
-    end
-  end
-
- 
+ scope :status_with_reviews, ->(status) {where(status: status).where("rating >= ?", '5.0')}
  
 
 

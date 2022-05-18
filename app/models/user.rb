@@ -7,4 +7,7 @@ class User < ApplicationRecord
   has_many :reviews, dependent: :destroy
   has_many :add_to_watchlists
   enum role:  [:Member, :Moderator, :Admin]
+
+   scope :long_reviews, -> { where("rating > 30")}
+
 end
