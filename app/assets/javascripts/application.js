@@ -17,4 +17,5 @@
 //= require cocoon
 //= require activestorage
 //= require turbolinks
-//= require_tree .
+//= require_tree 
+//= require rails_sortable

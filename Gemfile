@@ -15,8 +15,9 @@ gem "mini_magick"
 gem 'pg'
 gem 'yaml_db'
 gem 'pundit'
-gem 'jquery-ui-rails', '~> 5.0', '>= 5.0.5'
-gem 'acts-as-list', '~> 0.1.2'
+gem 'jquery-ui-rails'
+gem 'acts_as_list'
+gem 'rails_sortable'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.7'
 # Use sqlite3 as the database for Active Record

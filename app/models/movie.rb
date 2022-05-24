@@ -1,4 +1,6 @@
 class Movie < ApplicationRecord
+  # include RailsSortable::Model
+
   belongs_to :user
   has_many :reviews
   has_many :cast_memebers,dependent: :destroy, inverse_of: :movie
@@ -15,6 +17,8 @@ class Movie < ApplicationRecord
   enum role:  [:hero, :Producer, :director]
   enum status:  [:Draft, :Published, :Reject]
 
+  # set_sortable :sort
+
 
 
   # def self.search(title)
@@ -27,11 +31,15 @@ class Movie < ApplicationRecord
 
   scope :movie_title, ->(title) {where('title LIKE ?', "%#{title}%")}
 
-  scope :long_reviews,-> { where('rating > 7')}
+  # scope :long_reviews,-> { where('rating > 7')}
 
- scope :status_with_reviews, ->(status) {where(status: status).where("rating >= ?", '5.0')}
+#  scope :status_with_reviews, ->(status) {where(status: status).where("rating >= ?", '5.0')}
+
+  scope :movie_with_reviews, -> {where(id: Review.includes(:movie).pluck(:movie_id).uniq)}
+  # scope :movie_with_reviews, -> {where.not(reviews: {id: nil})}
+
  
-
+  acts_as_list
 
 end
 

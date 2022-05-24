@@ -1,5 +1,5 @@
 class MoviesController < ApplicationController
-before_action :set_movie, only: %i[ show edit update destroy ]
+before_action :set_movie, only: %i[ show edit update destroy sort]
 before_action :authenticate_user!, except: [:index,:show]
 
 
@@ -7,10 +7,20 @@ before_action :authenticate_user!, except: [:index,:show]
 
   def index
     if current_user.present?
-    @movies = policy_scope(Movie)
+    # @movies = policy_scope(Movie)
+    @movies = Movie.movie_with_reviews.order(:sort).all
     end
 
-   end
+  end
+
+  def sort
+    # byebug
+    params[:movie].each_with_index do |id, index|
+      Movie.where(id: id).update_all(sort: index+1)
+    end
+    head :ok
+  end
+
 
   def search
 
@@ -96,12 +106,12 @@ end
   private
   # Use callbacks to share common setup or constraints between actions.
   def set_movie
-    @movie = Movie.find(params[:id])
+    @movie = Movie.find_by_id(params[:id])
   end
 
   # Only allow a list of trusted parameters through.
   def movie_params
-    params.require(:movie).permit(:title, :description, :movie_length, :director, :rating, :image,:role,:status,
+    params.require(:movie).permit(:title, :description, :movie_length, :director, :rating, :image,:role,:status,:sort,
                   pictures_attributes: [:id, pictures: [] ],
                   cast_memebers_attributes: [:id,:name,:role,:_destroy],)
   end

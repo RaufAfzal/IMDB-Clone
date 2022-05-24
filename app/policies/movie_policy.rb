@@ -5,9 +5,9 @@ class MoviePolicy < ApplicationPolicy
       if user.present?
     
         if user.Admin?
-          scope.status_with_reviews(0)
+          scope.where(status:"Draft").includes(:reviews).where("rating != ?",'')
         else
-          scope.status_with_reviews(1)
+          scope.where(status:"Published").includes(:reviews).where("rating != ?",'')
         end
     end
    end

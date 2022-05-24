@@ -3,7 +3,11 @@ Rails.application.routes.draw do
   get 'add_to_watchlist/update'
   devise_for :users
   resources :movies do
+    collection do
+      patch :sort
+    end
     resources :reviews, except: [:show, :index]
+    
   end
 
   root to: "movies#index"

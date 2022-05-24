@@ -10,4 +10,5 @@ class Review < ApplicationRecord
     new_rating = movie.rating.present? ? (movie.rating.to_f + self.rating.to_f) / 2 : self.rating
     movie.update(rating: new_rating)
      end
+     
 end
