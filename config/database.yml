@@ -24,7 +24,7 @@ development:
   <<: *default
   database: movie_development
 
-development:
+production:
   <<: *default
   database: movie_production
   # The specified database role being used to connect to postgres.
