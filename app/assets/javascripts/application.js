@@ -13,7 +13,6 @@
 //= require jquery3
 //= require jquery_ujs
 //= require jquery-ui/widget
-//= require jquery-ui/sortable
 //= require cocoon
 //= require activestorage
 //= require turbolinks
