@@ -12,7 +12,6 @@ gem 'jquery-rails', '~> 4.3', '>= 4.3.3'
 gem 'rails-ujs', '~> 0.1.0'
 gem "cocoon"
 gem "mini_magick"
-gem 'pg'
 gem 'yaml_db'
 gem 'pundit'
 gem 'jquery-ui-rails'
@@ -49,7 +48,13 @@ gem 'jbuilder', '~> 2.5'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
+group :development do
+   gem 'sqlite3'
+end
 
+group :test, :production do
+    gem 'pg'
+end
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
