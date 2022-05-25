@@ -39,7 +39,7 @@ class Movie < ApplicationRecord
   # scope :movie_with_reviews, -> {where.not(reviews: {id: nil})}
 
  
-  acts_as_list
+  
 
 end
 
