@@ -13,13 +13,7 @@ before_action :authenticate_user!, except: [:index,:show]
 
   end
 
-  def sort
-    # byebug
-    params[:movie].each_with_index do |id, index|
-      Movie.where(id: id).update_all(sort: index+1)
-    end
-    head :ok
-  end
+  
 
 
   def search
@@ -61,8 +55,7 @@ before_action :authenticate_user!, except: [:index,:show]
 # POST /movies or /movies.json
   def create
     
-    @movie = current_user.movies.build(movie_params)
-
+    @movie = Movie.new(movie_params)
     respond_to do |format|
       if @movie.save
         format.html { redirect_to movie_url(@movie), notice: "Movie was successfully created." }
@@ -103,6 +96,15 @@ def destroy
   end
 end
 
+
+def sort
+  # byebug
+  params[:movie].each_with_index do |id, index|
+    Movie.where(id: id).update_all(sort: index+1)
+  end
+  head :ok
+end
+
   private
   # Use callbacks to share common setup or constraints between actions.
   def set_movie
@@ -111,7 +113,7 @@ end
 
   # Only allow a list of trusted parameters through.
   def movie_params
-    params.require(:movie).permit(:title, :description, :movie_length, :director, :rating, :image,:role,:status,:sort,
+    params.require(:movie).permit(:title, :description, :movie_length, :director, :rating, :image,:role,:status,:sort, :user_id,
                   pictures_attributes: [:id, pictures: [] ],
                   cast_memebers_attributes: [:id,:name,:role,:_destroy],)
   end

@@ -18,3 +18,5 @@ class ApplicationController < ActionController::Base
 
   helper_method :add_to_watchlist
 end
+
+

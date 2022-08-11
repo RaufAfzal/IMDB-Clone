@@ -3,7 +3,6 @@ class MoviePolicy < ApplicationPolicy
     # NOTE: Be explicit about which records you allow access to!
     def resolve
       if user.present?
-    
         if user.Admin?
           scope.where(status:"Draft").includes(:reviews).where("rating != ?",'')
         else

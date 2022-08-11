@@ -1,7 +1,7 @@
 
 <% if user_signed_in?%>
   <% @movies.each do |movie| %>
-  <div id="#"  data-url="<%= sort_movies_path %> >
+  <div id=<%=movie.id%>  data-url="<%= sort_movies_path %> >
    
     <div class="col-sm-6 col-md-3" >
       <div class="thumbnail">
